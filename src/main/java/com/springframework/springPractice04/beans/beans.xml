@@ -6,5 +6,17 @@
 
 	<bean id="patient"
 		class="com.springframework.springPractice04.Patient">
+	<constructor-arg value="5" name="id"></constructor-arg>
+	<constructor-arg value="Tom" name="name"></constructor-arg>
+	<property name="nationalId">
+		<value>12345</value>
+	</property>
+	<property name="address" ref="address"></property>
+	</bean>
+	<bean id="address"
+		class="com.springframework.springPractice04.Address">
+		<constructor-arg name="street" value="Panthapath"></constructor-arg>
+		<constructor-arg name="postcode" value="1200"></constructor-arg>
+	
 	</bean>
 </beans>
