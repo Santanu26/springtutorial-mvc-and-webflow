@@ -14,6 +14,13 @@ public class Patient {
 		this.id = id;
 		this.name = name;
 	}
+	public void onCreate() {
+		System.out.println("Inside onCreate : "+this);
+	}
+	
+	public void onDestroy() {
+		System.out.println("onDestroy method...");
+	}
 	public void speak() {
 		System.out.println("Help me...");
 	}
