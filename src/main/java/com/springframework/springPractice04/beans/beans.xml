@@ -2,16 +2,17 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
 	<bean id="patient"
 		class="com.springframework.springPractice04.Patient"
 		init-method="onCreate" destroy-method="onDestroy"
-		p:id = "654"
-	 p:name = "Biglia"
-		>
+		factory-method="getInstance" p:address-ref="address" c:_0="123"
+		c:_1="SSSSSS">
 	</bean>
+	
 	<bean id="address"
 		class="com.springframework.springPractice04.Address">
 		<constructor-arg name="street" value="Panthapath"></constructor-arg>
