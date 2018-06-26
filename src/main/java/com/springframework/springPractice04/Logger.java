@@ -6,8 +6,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Logger {
-	private LogWriter consoleWriter;
-	private LogWriter fileWriter;
+	private ConsoleWriter consoleWriter;
+	private FileWriter fileWriter;
 
 	public void writeConsole(String text) {
 		consoleWriter.write(text);

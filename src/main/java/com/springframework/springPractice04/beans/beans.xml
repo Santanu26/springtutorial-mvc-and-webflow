@@ -13,6 +13,6 @@
 	</bean>
 	<bean id="logger"
 		class="com.springframework.springPractice04.Logger"
-		autowire="byName">
+		autowire="byType">
 	</bean>
 </beans>
