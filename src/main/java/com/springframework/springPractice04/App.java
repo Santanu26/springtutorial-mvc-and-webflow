@@ -9,8 +9,8 @@ public class App {
 		ApplicationContext context = 
 				new ClassPathXmlApplicationContext("com/springframework/springPractice04/beans/beans.xml");
 		Patient patient = (Patient) context.getBean("patient");
-		Address address = (Address) context.getBean("address");
-		patient.speak();
+	//	Address address = (Address) context.getBean("address");
+		//patient.speak();
 		System.out.println(patient);
 
 		((ClassPathXmlApplicationContext) context).close();
