@@ -8,9 +8,8 @@ public class App {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"com/springframework/springPractice04/beans/beans.xml");
-		Logger logger = (Logger) context.getBean("logger");
-		logger.writeConsole("Simple Text for Console Writer");
-		logger.writeFile("Simple Text for File Writer");
+		Parrot parrot = (Parrot) context.getBean("parrot");
+		System.out.println(parrot);
 		((ClassPathXmlApplicationContext) context).close();
 	}
 }
