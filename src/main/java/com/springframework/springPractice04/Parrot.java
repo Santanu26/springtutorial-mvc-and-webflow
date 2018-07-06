@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import lombok.ToString;
 
 @ToString
-@Component
+//@Component
 public class Parrot {
 	private String id;
 
